@@ -10,7 +10,7 @@ La reconnaissance de chiffres manuscrits est un problème classique en vision pa
 ## Méthode
 
 ### Collecte de données
-Nous utilisons le célèbre ensemble de données MNIST, composé de 60 000 images d'entraînement et de 10 000 images de test, chacune représentant un chiffre manuscrit de 0 à 9.
+Nous utilisons le célèbre ensemble de données Brats("Brain Tumor Segmentation Challenge")
 Ces images IRM sont généralement constituées de plusieurs modalités, telles que :
 
     T1-weighted (T1) : Cette modalité fournit des images avec un bon contraste entre la matière grise et la matière blanche du cerveau.

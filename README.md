@@ -1,5 +1,5 @@
 # Brats
-# Projet de Reconnaissance de Chiffres Manuscrits
+# Projet de la segmentation semantiques des tumeurs cérébrales à partir d'images IRM (Imagerie par Résonance Magnétique)
 
 Ce projet est une implémentation d'un système de reconnaissance de chiffres manuscrits utilisant des réseaux de neurones convolutifs (CNN). Il est développé en Python avec l'aide de la bibliothèque TensorFlow.
 
@@ -11,7 +11,12 @@ La reconnaissance de chiffres manuscrits est un problème classique en vision pa
 
 ### Collecte de données
 Nous utilisons le célèbre ensemble de données MNIST, composé de 60 000 images d'entraînement et de 10 000 images de test, chacune représentant un chiffre manuscrit de 0 à 9.
+Ces images IRM sont généralement constituées de plusieurs modalités, telles que :
 
+    T1-weighted (T1) : Cette modalité fournit des images avec un bon contraste entre la matière grise et la matière blanche du cerveau.
+    T1-weighted avec contraste (T1c) : Les images T1c sont similaires aux images T1, mais avec l'injection d'un agent de contraste qui permet de mieux visualiser les zones de tumeur.
+    T2-weighted (T2) : Cette modalité fournit des images avec un contraste différent qui peut aider à détecter d'autres caractéristiques de la tumeur.
+    FLAIR (Fluid Attenuated Inversion Recovery) : Cette modalité supprime le signal de liquide cérébrospinal, ce qui permet de mieux visualiser les zones de tumeur à proximité des cavités remplies de liquide.
 ### Prétraitement des données
 Les images sont normalisées et redimensionnées pour être adaptées à l'entrée du modèle CNN.
 

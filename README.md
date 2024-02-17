@@ -1,7 +1,7 @@
 # Brats
 # Projet de la segmentation semantiques des tumeurs cérébrales à partir d'images IRM (Imagerie par Résonance Magnétique)
 
-
+Ce projet est une implémentation d'un système de segmentation sémantique de tumeurs cérébrales utilisant le modèle U-Net. Il est développé en Python.
 
 ## Introduction
 

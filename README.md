@@ -1,2 +1,2 @@
 # Brats
-[image](/images/S.jpeg)
+![image](/images/S.jpeg)

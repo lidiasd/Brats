@@ -1,7 +1,7 @@
 # Brats
 # Projet de la segmentation semantiques des tumeurs cérébrales à partir d'images IRM (Imagerie par Résonance Magnétique)
 
-Ce projet est une implémentation d'un système de reconnaissance de chiffres manuscrits utilisant des réseaux de neurones convolutifs (CNN). Il est développé en Python avec l'aide de la bibliothèque TensorFlow.
+
 
 ## Introduction
 

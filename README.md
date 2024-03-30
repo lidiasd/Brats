@@ -11,6 +11,7 @@ La reconnaissance de chiffres manuscrits est un problème classique en vision pa
 
 ### Collecte de données
 Nous utilisons le célèbre ensemble de données Brats("Brain Tumor Segmentation Challenge")
+
 Ces images IRM sont généralement constituées de plusieurs modalités, telles que :
 
     T1-weighted (T1) : Cette modalité fournit des images avec un bon contraste entre la matière grise et la matière blanche du cerveau.

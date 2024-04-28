@@ -21,8 +21,8 @@ Ces images IRM sont généralement constituées de plusieurs modalités, telles 
 ### Prétraitement des données
 Les images sont normalisées et redimensionnées pour être adaptées à l'entrée du modèle CNN.
 
-### Modèle CNN
-Nous avons construit un modèle CNN avec 2 couches de convolution suivies de couches de pooling, et des couches entièrement connectées pour la classification. Le modèle est entraîné sur les données d'entraînement et évalué sur les données de test.
+### Modèle Unet
+description.
 
 ## Installation
 

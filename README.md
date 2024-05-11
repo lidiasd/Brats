@@ -22,7 +22,10 @@ Les images sont normalisées et redimensionnées pour être adaptées à l'entr�
 description.
 ## Architecture de la méthode par fusion précoce des quatre modalités
 
-![Architecture](images/architecture.png) 
+![Architecture](images/architecture.png)
+
+## Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
+
 ![Architecture_](images/architecture_t1ce_flair.png) 
 
 ## Résultats 

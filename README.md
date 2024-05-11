@@ -23,10 +23,11 @@ description.
 ## Architecture de la méthode par fusion précoce des quatre modalités
 
 ![Architecture](images/architecture.png) 
+![Architecture_](images/architecture_t1ce_flair.png) 
+
 ## Résultats 
 
 ![Train](images/curve_train_8epoch_model1_dice_acc.png) 
-
 ## Installation
 
 1. Cloner ce dépôt :

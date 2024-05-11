@@ -6,6 +6,7 @@ Ce projet est une implémentation d'un système de segmentation sémantique de t
 ## Introduction
 
 La reconnaissance de chiffres manuscrits est un problème classique en vision par ordinateur et en apprentissage automatique. Ce projet vise à créer un modèle de machine learning capable de reconnaître des chiffres écrits à la main avec une haute précision.
+
 ![Architecture](images/architecture_fusion_precoce.png) 
 
 ## Méthode

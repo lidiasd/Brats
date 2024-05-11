@@ -26,7 +26,7 @@ Les images sont normalisées et redimensionnées pour être adaptées à l'entr�
 description.
 ## Architecture de la méthode par fusion précoce des quatre modalités
 
-![Architecture](images/architecture_fusion_precoce.png) 
+![Architecture](images/architecture.png) 
 
 ## Installation
 

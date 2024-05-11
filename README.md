@@ -23,7 +23,9 @@ description.
 ## Architecture de la méthode par fusion précoce des quatre modalités
 
 ![Architecture](images/architecture.png)
+## Résultats 
 
+![Train](images/curve_train_8epoch_model1_dice_acc.png) 
 ## Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
 
 ![Architecture_](images/architecture_t1ce_flair.png) 

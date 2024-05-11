@@ -1,7 +1,8 @@
 # Brats
 # Projet de la segmentation semantiques des tumeurs cérébrales à partir d'images IRM (Imagerie par Résonance Magnétique)
 
-Ce projet est une implémentation d'un système de segmentation sémantique de tumeurs cérébrales utilisant le modèle U-Net. Il est développé en Python.
+## Résumé
+
 
 ## Introduction
 
@@ -11,14 +12,9 @@ La reconnaissance de chiffres manuscrits est un problème classique en vision pa
 ## Méthode
 
 ### Collecte de données
-Nous utilisons le célèbre ensemble de données Brats("Brain Tumor Segmentation Challenge")
+Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT. Ces données sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Les fichiers DICOM associés seront publiés après le défi, et une correspondance entre les données BRATS et d'autres collections facilitera la recherche.
 
-Ces images IRM sont généralement constituées de plusieurs modalités, telles que :
 
-    T1-weighted (T1) : Cette modalité fournit des images avec un bon contraste entre la matière grise et la matière blanche du cerveau.
-    T1-weighted avec contraste (T1c) : Les images T1c sont similaires aux images T1, mais avec l'injection d'un agent de contraste qui permet de mieux visualiser les zones de tumeur.
-    T2-weighted (T2) : Cette modalité fournit des images avec un contraste différent qui peut aider à détecter d'autres caractéristiques de la tumeur.
-    FLAIR (Fluid Attenuated Inversion Recovery) : Cette modalité supprime le signal de liquide cérébrospinal, ce qui permet de mieux visualiser les zones de tumeur à proximité des cavités remplies de liquide.
 ### Prétraitement des données
 Les images sont normalisées et redimensionnées pour être adaptées à l'entrée du modèle CNN.
 

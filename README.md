@@ -23,7 +23,7 @@ Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gl
 ### Prétraitement des données
 Les images sont normalisées et redimensionnées pour être adaptées à l'entrée du modèle CNN.
 
-### Modèle Unet
+### Modèle Unet 3D
 description.
 ## Architecture de la méthode par fusion précoce des quatre modalités
 

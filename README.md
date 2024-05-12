@@ -23,21 +23,26 @@ Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gl
 ### Prétraitement des données
 Les images sont normalisées et redimensionnées pour être adaptées à l'entrée du modèle CNN.
 
-### Modèle Unet 3D
+## Modèle Unet 3D
 description.
-## Architecture de la méthode par fusion précoce des quatre modalités
+### Architecture de la méthode par fusion précoce des quatre modalités
 
 ![Architecture](images/architecture.png)
-## Résultats 
+### Résultats 
 
 ![Train](images/curve_train_8epoch_model1_dice_acc.png) 
-## Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
+### Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
 
 ![Architecture_](images/architecture_t1ce_flair.png) 
 
-## Résultats 
+### Résultats 
 
 ![Architecture_](images/curve_train_8epoch_model1_dice_acc_2modalities.png) 
+## Modèle Unet 2D
+
+### Architecture de la méthode par fusion précoce des quatre modalités
+
+### Résultats 
 ## Installation
 
 1. Cloner ce dépôt :

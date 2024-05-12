@@ -11,7 +11,6 @@ Les résultats de cette méthode sont prometteurs, avec des scores Dice de *****
 
 ## Introduction
 
-La reconnaissance de chiffres manuscrits est un problème classique en vision par ordinateur et en apprentissage automatique. Ce projet vise à créer un modèle de machine learning capable de reconnaître des chiffres écrits à la main avec une haute précision.
 
 
 ## Méthode

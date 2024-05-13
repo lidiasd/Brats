@@ -32,11 +32,10 @@ description.
 ![Train](images/curve_train_8epoch_model1_dice_acc.png) 
 ### Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
 
-![Architecture_](images/architecture_t1ce_flair.png) 
+![Architecture_](images/unet2D_2mod.png) 
 
 ### Résultats 
 
-![Architecture_](images/curve_train_8epoch_model1_dice_acc_2modalities.png) 
 ## Modèle Unet 2D
 
 ### Architecture de la méthode par fusion précoce des quatre modalités

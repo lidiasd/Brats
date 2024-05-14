@@ -29,8 +29,7 @@ description.
 
 ![Architecture](images/unet2D_4mod.png)
 ### Résultats 
-
-![Train](images/curve_train_8epoch_model1_dice_acc.png) 
+![Architecture_](images/first_model_curve_train.png)
 ### Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
 
 ![Architecture_](images/unet2D_2mod.png) 

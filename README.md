@@ -30,17 +30,14 @@ description.
 ![Architecture](images/unet2D_4mod.png)
 ### Résultats 
 ![Architecture_](images/first_model_curve_train.png)
+![examples](images/examples.png)
 ### Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
 
 ![Architecture_](images/unet2D_2mod.png) 
 
 ### Résultats 
-
-## Modèle Unet 2D
-
-### Architecture de la méthode par fusion précoce des quatre modalités
-
-### Résultats 
+![""""](images/curve_train_mdl2.png)
+![""""""](images/examples_m2.png)
 ## Installation
 
 1. Cloner ce dépôt :

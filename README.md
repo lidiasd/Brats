@@ -42,8 +42,20 @@ description.
 ![Architecture_](images/architecture_1.png) 
 
 ### Résultats 
-![""""](images/curve_train_mdl2.png)
+![""""](images/curve_train_m2.png)
+
+Des examples
+
 ![""""""](images/examples_m2.png)
+
+Un example
+
+![""""""](images/example_m2_1.png)
+
+Un example
+
+![""""""](images/example_m2_2.png)
+
 ## Installation
 
 1. Cloner ce dépôt :

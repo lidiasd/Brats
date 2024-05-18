@@ -17,9 +17,11 @@ L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnos
 ### Dataset
 Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT qui sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Le jeu de données dans cette étude est composé de 1251 images : 1012 pour l'entraînement, 126 pour la validation, et 113 pour le test.
 
-## Modèle Unet 2D
-description.
-Le modèle U-Net 2D est une architecture de réseau de neurones convolutifs (CNN) largement utilisée pour les tâches de segmentation d'images, en particulier en imagerie médicale. Conçu pour segmenter efficacement les images en préservant les détails spatiaux, il suit une structure en forme de "U" composée de deux chemins principaux : un chemin contractant et un chemin expansif.
+## Modèle U-Net
+U-Net est une architecture pour la segmentation sémantique. Il se compose d'un chemin de contraction et d'un chemin d'expansion. Le chemin de contraction suit l'architecture typique d'un réseau convolutionnel. Il consiste en l'application répétée de deux convolutions 3x3 (convolutions sans remplissage), chacune suivie d'une unité linéaire rectifiée (ReLU) et d'une opération de pooling max 2x2 avec stride 2 pour le sous-échantillonnage.
+
+Traduit avec DeepL.com (version gratuite)
+![Unet](images/unet.png) 
 
 ### Architecture de la méthode par fusion précoce des quatre modalités
 

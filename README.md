@@ -34,7 +34,7 @@ description.
 ![Architecture](images/unet2D_4mod.png)
 ### Résultats 
 ![Architecture_](images/curve_train_m1.png)
-![examples]()
+![examples](images/examples_m1)
 ### Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
 
 ![Architecture_](images/unet2D_2mod.png) 

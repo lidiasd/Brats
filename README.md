@@ -10,27 +10,21 @@ Les résultats de cette méthode sont prometteurs, avec des scores Dice de *****
 
 ## Introduction
 
-L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnostic et le suivi des tumeurs cérébrales. Cependant, la segmentation manuelle des tumeurs dans les images IRM est une tâche laborieuse et sujette à des variations interobservateurs. Pour relever ce défi, l'automatisation de la segmentation des tumeurs cérébrales est nécessaire. D'où nous proposons une méthode basée sur un modèle U-Net 2D.
+L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnostic des tumeurs cérébrales. Cependant, la segmentation manuelle des tumeurs dans les images IRM est une tâche très complexe. D'où l'intérêt de l'automatisation de la segmentation des tumeurs cérébrales. Nous proposons donc une méthode basée sur un modèle U-Net 2D.
 
 ## Méthode
 
-### Collecte de données
-Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT. Ces données sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Les fichiers DICOM associés seront publiés après le défi, et une correspondance entre les données BRATS et d'autres collections facilitera la recherche.
-
-
-### Prétraitement des données
-Les images sont normalisées et redimensionnées pour être adaptées à l'entrée du modèle CNN.
-![Architecture_](images/data_distrb_v1.png) 
-train 1012
- val 126
-test 113
-
+### Dataset
+Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT qui sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Le jeu de données dans cette étude est composé de 1251 images : 1012 pour l'entraînement, 126 pour la validation, et 113 pour le test.
 
 ## Modèle Unet 2D
 description.
+Le modèle U-Net 2D est une architecture de réseau de neurones convolutifs (CNN) largement utilisée pour les tâches de segmentation d'images, en particulier en imagerie médicale. Conçu pour segmenter efficacement les images en préservant les détails spatiaux, il suit une structure en forme de "U" composée de deux chemins principaux : un chemin contractant et un chemin expansif.
+
 ### Architecture de la méthode par fusion précoce des quatre modalités
 
 ![Architecture](images/unet2D_4mod.png)
+
 ### Résultats 
 ![Architecture_](images/curve_train_m1.png)
 

@@ -47,7 +47,9 @@ Voici quelques exemples bien illustrés de tranches de tumeurs :
 ![Architecture_](images/architecture_1.png) 
 
 ### Résultats 
+
 ![""""](images/curve_train_m2.png)
+Les résultats sur l'ensemble de test montrent une performance remarquable du modèle. La métrique Mean IoU (Intersection over Union) est élevée à 0.7700, indiquant une précision significative dans la délimitation des régions de tumeurs. Le dice coefficient, qui mesure la similarité entre les prédictions et les annotations, est également satisfaisant à 0.5371, soulignant une corrélation raisonnable entre les deux. Les valeurs de précision et de sensibilité sont élevées, respectivement à 0.9905 et 0.9884, démontrant la capacité du modèle à classifier avec précision les différentes classes de tumeurs. La spécificité est également élevée, à 0.9968, ce qui confirme la capacité du modèle à identifier les vrais négatifs. En ce qui concerne les sous-régions tumorales, les coefficients de Dice pour la nécrose, l'œdème et la tumeur active sont respectivement de 0.4801, 0.5767 et 0.6342, indiquant une segmentation raisonnablement précise de ces régions.
 
 Des examples
 

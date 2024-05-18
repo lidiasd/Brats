@@ -14,13 +14,13 @@ L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnos
 
 ## Méthode
 
-### Dataset
+### Dataset && Paramètres
 Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT qui sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Le jeu de données dans cette étude est composé de 1251 images : 1012 pour l'entraînement, 126 pour la validation, et 113 pour le test.
+Pendant l'entraînement, nous utilisons un learning_rate   de 0.001 sur 15 époques, avec des images de taille 128x128. Les métriques évaluées comprennent MeanIoU (pour quatre classes), dice_coef, précision, sensibilité, spécificité, et à nouveau dice_coef pour assurer une évaluation globale complète.
 
 ## Modèle U-Net
 U-Net est une architecture pour la segmentation sémantique. Il se compose d'un chemin de contraction et d'un chemin d'expansion. Le chemin de contraction suit l'architecture typique d'un réseau convolutionnel. Il consiste en l'application répétée de deux convolutions 3x3 (convolutions sans remplissage), chacune suivie d'une unité linéaire rectifiée (ReLU) et d'une opération de pooling max 2x2 avec stride 2 pour le sous-échantillonnage.
 
-Traduit avec DeepL.com (version gratuite)
 ![Unet](images/unet.png) 
 
 ### Architecture de la méthode par fusion précoce des quatre modalités
@@ -30,10 +30,14 @@ La deuxième méthode repose sur une fusion précoce des quatre modalités d'ima
 ![Architecture](images/unet2D_4mod.png)
 
 ### Résultats 
-Pendant l'entraînement, nous utilisons un learning_rate   de 0.001 sur 15 époques, avec des images de taille 128x128. Les métriques évaluées comprennent MeanIoU (pour quatre classes), dice_coef, précision, sensibilité, spécificité, et à nouveau dice_coef pour assurer une évaluation globale complète.
 
 ![Architecture_](images/curve_train_m1.png)
 
+À l'époque 11 sur 15, les résultats sur l'ensemble de validation montrent une performance globale élevée du modèle. La métrique Mean IoU (Intersection over Union) est de 0.3931, indiquant une bonne précision dans la délimitation des régions de tumeurs. Le dice coefficient, qui mesure la similarité entre les prédictions et les vérités terrain, est également élevé à 0.6123, indiquant une correspondance étroite entre les prédictions et les annotations. Les valeurs de précision, sensibilité et spécificité sont également élevées, démontrant la capacité du modèle à bien classifier les différents types de tumeurs. En ce qui concerne les sous-régions tumorales, les coefficients de Dice pour la nécrose, l'œdème et la tumeur active sont respectivement de 0.5846, 0.6964 et 0.7215, avec des valeurs plus élevées pour l'œdème et la tumeur active, ce qui suggère une segmentation précise de ces régions.
+
+Les résultats sur l'ensemble de test montrent une performance impressionnante du modèle. La métrique Mean IoU (Intersection over Union) est de 0.3937, indiquant une précision considérable dans la délimitation des régions de tumeurs. Le dice coefficient, mesurant la similarité entre les prédictions et les annotations, est également élevé à 0.6294, soulignant une forte corrélation entre les deux. Les valeurs de précision, sensibilité et spécificité sont également élevées, démontrant la capacité du modèle à classifier avec précision les différentes classes de tumeurs. Pour les sous-régions tumorales, les coefficients de Dice pour la nécrose, l'œdème et la tumeur active sont respectivement de 0.6100, 0.7601 et 0.7692, confirmant une segmentation précise de ces régions.
+
+ 
 Voici quelques exemples bien illustrés de tranches de tumeurs :
 
 ![examples](images/example_m1.png)

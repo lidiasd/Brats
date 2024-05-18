@@ -25,7 +25,7 @@ Traduit avec DeepL.com (version gratuite)
 
 ### Architecture de la méthode par fusion précoce des quatre modalités
 
-La première méthode repose sur une fusion précoce des quatre modalités d'imagerie, chacune avec une taille de 128x128 pixels.
+La première méthode repose sur une fusion précoce des quatre modalités d'imagerie.
 
 ![Architecture](images/unet2D_4mod.png)
 

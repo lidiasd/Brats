@@ -25,10 +25,16 @@ Traduit avec DeepL.com (version gratuite)
 
 ### Architecture de la méthode par fusion précoce des quatre modalités
 
+La première méthode repose sur une fusion précoce des quatre modalités d'imagerie, chacune avec une taille de 128x128 pixels.
+
 ![Architecture](images/unet2D_4mod.png)
 
 ### Résultats 
+Pendant l'entraînement, nous utilisons un learning_rate   de 0.001 sur 15 époques, avec des images de taille 128x128. Les métriques évaluées comprennent MeanIoU (pour quatre classes), dice_coef, précision, sensibilité, spécificité, et à nouveau dice_coef pour assurer une évaluation globale complète.
+
 ![Architecture_](images/curve_train_m1.png)
+
+Voici quelques exemples bien illustrés de tranches de tumeurs :
 
 ![examples](images/example_m1.png)
 

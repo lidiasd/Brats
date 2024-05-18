@@ -2,16 +2,15 @@
 # Projet de la segmentation semantiques des tumeurs cérébrales à partir d'images IRM (Imagerie par Résonance Magnétique)
 
 ## Résumé
+Ce projet se concentre sur la segmentation des tumeurs dans les images IRM cérébrales en utilisant le jeu de données BRATS 2021. La méthode proposée repose sur un modèle U-Net 2D, appliquant la fusion précoce pour intégrer les quatre modalités d'imagerie : T1, T1c, T2 et FLAIR.
 
-Ce projet vise à résoudre le défi complexe de la segmentation des formes de tumeurs dans les images IRM du cerveau en utilisant le jeu de données BRATS 2021. La méthode propose une approche de segmentation basée sur un modèle U-Net 3D avec une fusion précoce des quatre modalités d'imagerie : T1, T1c, T2 et FLAIR.
-
-Cette approche permet la détection et l'extraction automatiques des sous-régions des formes de tumeurs, comprenant la classe nécrose, l'œdème et la tumeur active. Nous avons évalué notre modèle sur les ensembles de données d'entraînement et de validation BRATS 2021, comprenant un total de 1250 IRM cérébrales.
+Cette approche permet la détection et l'extraction automatiques des sous-régions tumorales, incluant la nécrose, l'œdème et la tumeur active. Nous avons évalué notre modèle sur les ensembles de données d'entraînement et de validation BRATS 2021, totalisant 1250 IRM cérébrales.
 
 Les résultats de cette méthode sont prometteurs, avec des scores Dice de ******** pour la tumeur en croissance (ET), **** pour la tumeur complète (WT) et **** pour le noyau tumoral (TC) sur 20 % de l'ensemble de données d'entraînement. Cette approche offre une segmentation précise et rapide des gliomes, ouvrant la voie à des avancées significatives dans le diagnostic et le traitement des tumeurs cérébrales.
 
 ## Introduction
 
-
+L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnostic et le suivi des tumeurs cérébrales. Cependant, la segmentation manuelle des tumeurs dans les images IRM est une tâche laborieuse et sujette à des variations interobservateurs. Pour relever ce défi, l'automatisation de la segmentation des tumeurs cérébrales est nécessaire. D'où nous proposons une méthode basée sur un modèle U-Net 2D.
 
 ## Méthode
 

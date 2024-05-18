@@ -37,9 +37,9 @@ description.
 
 ![examples](images/example_m1.png)
 
-### Architecture de la méthode par fusion précoce des deux modalités "Flair", "T1_ce"
+### Architecture de la méthode par fusion précoce des quatre modalités avec le calcul de leurs moyenne
 
-![Architecture_](images/unet2D_2mod.png) 
+![Architecture_](images/architecture_1.png) 
 
 ### Résultats 
 ![""""](images/curve_train_mdl2.png)

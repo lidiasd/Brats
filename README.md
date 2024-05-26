@@ -42,6 +42,29 @@ Voici quelques exemples bien illustrés de tranches de tumeurs :
 
 ![examples](images/example_m1.png)
 
+### Architecture de la méthode par fusion précoce des deux modalités  Flair T1ce
+
+![Architecture_](images/unet2D_2mod.png) 
+
+### Résultats 
+
+![""""](images/curve_train_m3.png)
+Les résultats sur l'ensemble de validation montrent une performance remarquable du modèle. La métrique Mean IoU (Intersection over Union) est élevée à 0.7707, indiquant une précision significative dans la délimitation des régions de tumeurs. Le dice coefficient, qui mesure la similarité entre les prédictions et les annotations, est également satisfaisant à 0.5295, soulignant une corrélation raisonnable entre les deux. Les valeurs de précision et de sensibilité sont élevées, respectivement à 0.9925 et 0.9892, démontrant la capacité du modèle à classifier avec précision les différentes classes de tumeurs. La spécificité est également élevée, à 0.9968, ce qui confirme la capacité du modèle à identifier les vrais négatifs. En ce qui concerne les sous-régions tumorales, les coefficients de Dice pour la nécrose, l'œdème et la tumeur active sont respectivement de 0.4911, 0.5695 et 0.6645, indiquant une segmentation raisonnablement précise de ces régions.
+
+Les résultats sur l'ensemble de test montrent une performance remarquable du modèle. La métrique Mean IoU (Intersection over Union) est élevée à 0.7700, indiquant une précision significative dans la délimitation des régions de tumeurs. Le dice coefficient, qui mesure la similarité entre les prédictions et les annotations, est également satisfaisant à 0.5371, soulignant une corrélation raisonnable entre les deux. Les valeurs de précision et de sensibilité sont élevées, respectivement à 0.9905 et 0.9884, démontrant la capacité du modèle à classifier avec précision les différentes classes de tumeurs. La spécificité est également élevée, à 0.9968, ce qui confirme la capacité du modèle à identifier les vrais négatifs. En ce qui concerne les sous-régions tumorales, les coefficients de Dice pour la nécrose, l'œdème et la tumeur active sont respectivement de 0.4801, 0.5767 et 0.6342, indiquant une segmentation raisonnablement précise de ces régions.
+
+Des examples
+
+![""""""](images/examples_m3.png)
+
+Un example
+
+![""""""](images/example_m2_1.png)
+
+Un example
+
+![""""""](images/example_m2_2.png)
+
 ### Architecture de la méthode par fusion précoce des quatre modalités avec le calcul de leurs moyenne
 
 ![Architecture_](images/architecture_1.png) 

@@ -57,11 +57,11 @@ Des examples
 
 ![""""""](images/examples_m2.png)
 
-example tranches 
+Des examples detaillés 
 
 ![""""""](images/example_m2_1.png)
 
-example tranches 
+Des examples detaillés 
 
 ![""""""](images/example_m2_2.png)
 
@@ -81,7 +81,7 @@ Des examples
 
 ![""""""](images/examples_m3.png)
 
-example tranches 
+Des examples detaillés 
 
 ![""""""](images/example1_m3.png)
 

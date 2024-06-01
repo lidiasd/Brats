@@ -85,28 +85,11 @@ example tranches
 
 ![""""""](images/example1_m3.png)
 
-example tranches 
+Des examples detaillés 
 
 ![""""""](images/example2_m3.png)
-## Installation
 
-1. Cloner ce dépôt :
 
-```bash
-git clone https://github.com/votre-utilisateur/projet-reconnaissance-chiffres-manuscrits.git
-```
-
-2. Installer les dépendances :
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Lancer le script principal :
-
-```bash
-python main.py
-```
 
 ## Contributions
 
@@ -118,4 +101,4 @@ Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
 ---
 
-Pour toute question ou commentaire, veuillez contacter l'auteur du projet à [email@example.com](mailto:email@example.com).
+Pour toute question ou commentaire, veuillez contacter l'auteur du projet à [email@.com](mailto:email@example.com).

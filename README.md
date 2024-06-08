@@ -44,6 +44,8 @@ Des examples
  
 ### Architecture de la méthode par fusion précoce des quatre modalités moyenne
 
+Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1c, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, nous exploitons de manière optimale les informations des quatre modalités en même temps, mais cette fois en calculant la moyenne des quatre modalités.
+
 ![Architecture](images/architecture_1.png)
 
 ### Résultats 

@@ -25,6 +25,8 @@ U-Net est une architecture pour la segmentation sémantique. Il se compose d'un 
 
 ### Architecture de la méthode par fusion précoce des quatre modalités
 
+Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1c, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, nous exploitons de manière optimale les informations des quatre modalités en même temps.
+
 ![Architecture](images/unet2D_4mod.png)
 
 ### Résultats 

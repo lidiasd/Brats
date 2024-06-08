@@ -25,7 +25,6 @@ U-Net est une architecture pour la segmentation sémantique. Il se compose d'un 
 
 ### Architecture de la méthode par fusion précoce des quatre modalités
 
-
 ![Architecture](images/unet2D_4mod.png)
 
 ### Résultats 

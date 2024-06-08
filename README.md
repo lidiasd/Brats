@@ -69,7 +69,7 @@ Des examples detaillés
 ![""""""](images/example_m2_2.png)
 
 
-### Architecture de la méthode par fusion précoce des 2 modalités 
+### Architecture de la méthode par fusion précoce des 2 modalités (T1ce et Flair)
 
 Cette méthode se distingue par la fusion précoce des deux modalités d'imagerie IRM (T1ce et Flair). En combinant ces deux modalités dès les premières couches du réseau, comme illustré ci-dessous, nous exploitons de manière optimale les informations des deux modalités en même temps. Cette approche est inspirée des travaux ultérieurs.
 

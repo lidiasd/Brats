@@ -96,14 +96,4 @@ Des examples detaillés
 
 
 
-## Contributions
-
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez ouvrir une demande d'extraction avec vos modifications.
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
-
----
-
-Pour toute question ou commentaire, veuillez contacter l'auteur du projet à [email@.com](mailto:email@example.com).
+ 

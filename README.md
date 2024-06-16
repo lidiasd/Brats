@@ -98,7 +98,7 @@ Des examples detaillés
 ##Discussion
 D'après le tableau ci-dessous qui résume les résultats des trois modèles on déduit que globalement,  la méthode par fusion précoce des 2 modalités (T1ce et Flair) est la plus performante 
 
-![""""""](images/examples_m3.png)
+![""""""](images/discussion.png)
 
 Liens utiles : 
 

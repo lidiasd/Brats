@@ -9,7 +9,7 @@ Le modèle est correct, surpassant la moyenne, avec des scores Dice de 69,19 % p
 
 ## Introduction
 
-L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnostic des tumeurs cérébrales. Cependant, la segmentation manuelle des tumeurs dans les images IRM est une tâche très complexe. D'où l'intérêt de l'automatisation de la segmentation des tumeurs cérébrales. Nous proposons donc une méthode basée sur un modèle U-Net 2D qui permet de relever ce défi.
+L'imagerie par résonance magnétique (IRM) est un outil crucial pour le diagnostic des tumeurs cérébrales. Cependant, la segmentation manuelle des tumeurs dans les images IRM est une tâche très complexe. D'où l'intérêt de l'automatisation de la segmentation des tumeurs cérébrales. Je propose donc une méthode basée sur un modèle U-Net 2D qui permet de relever ce défi.
 
 ## Modèle U-Net
 U-Net est une architecture pour la segmentation sémantique. Il se compose d'un chemin de contraction et d'un chemin d'expansion. Le chemin de contraction suit l'architecture typique d'un réseau convolutionnel. Il consiste en l'application répétée de deux convolutions 3x3 (convolutions sans remplissage), chacune suivie d'une unité linéaire rectifiée (ReLU) et d'une opération de pooling max 2x2 avec stride 2 pour le sous-échantillonnage.
@@ -20,7 +20,7 @@ U-Net est une architecture pour la segmentation sémantique. Il se compose d'un 
 
 ### Dataset && Paramètres
 Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT qui sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Le jeu de données dans cette étude est composé de 1251 images : 1012 pour l'entraînement, 126 pour la validation, et 113 pour le test.
-Pendant l'entraînement, nous utilisons un learning rate   de 0.001 sur 15 époques, avec des images de taille 128x128 et un batch size de 2. Les métriques évaluées comprennent MeanIoU (pour quatre classes) car elle permet d'évaluer globalement la méthode, dice_coef, précision, sensibilité, spécificité pour assurer une évaluation complète.
+Pendant l'entraînement, j'utilise un learning rate   de 0.001 sur 15 époques, avec des images de taille 128x128 et un batch size de 2. Les métriques évaluées comprennent MeanIoU (pour quatre classes) car elle permet d'évaluer globalement la méthode, dice_coef, précision, sensibilité, spécificité pour assurer une évaluation complète.
 
 ### Architecture de la méthode par fusion précoce des quatres modalités
 

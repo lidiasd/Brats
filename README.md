@@ -24,7 +24,7 @@ Pendant l'entraînement, nous utilisons un learning rate   de 0.001 sur 15 époq
 
 ### Architecture de la méthode par fusion précoce des quatres modalités
 
-Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1ce, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, j'ai exploité de manière optimale les informations des quatres modalités en même temps.
+Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1ce, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, j'exploite de manière optimale les informations des quatres modalités en même temps.
 
 ![Architecture](images/unet2D_4mod.png)
 
@@ -43,7 +43,7 @@ Des examples
  
 ### Architecture de la méthode par fusion précoce des quatre modalités moyenne
 
-Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1ce, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, nous exploitons de manière optimale les informations des quatre modalités en même temps, mais cette fois en calculant la moyenne des quatre modalités.
+Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1ce, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, j'exploite de manière optimale les informations des quatre modalités en même temps, mais cette fois en calculant la moyenne des quatre modalités.
 
 ![Architecture](images/architecture_1.png)
 
@@ -70,7 +70,7 @@ Des examples detaillés
 
 ### Architecture de la méthode par fusion précoce des 2 modalités (T1ce et Flair)
 
-Cette méthode se distingue par la fusion précoce des deux modalités d'imagerie IRM (T1ce et Flair). En combinant ces deux modalités dès les premières couches du réseau, comme illustré ci-dessous, nous exploitons de manière optimale les informations des deux modalités en même temps. Cette approche est inspirée des travaux ultérieurs.
+Cette méthode se distingue par la fusion précoce des deux modalités d'imagerie IRM (T1ce et Flair). En combinant ces deux modalités dès les premières couches du réseau, comme illustré ci-dessous, j'exploite de manière optimale les informations des deux modalités en même temps. Cette approche est inspirée des travaux ultérieurs.
 
 ![Architecture](images/unet2D_2mod.png)
 

@@ -1,4 +1,3 @@
-# Brats
 # Projet de la segmentation semantiques des tumeurs cérébrales à partir d'images IRM (Imagerie par Résonance Magnétique) 
 
 ## Résumé

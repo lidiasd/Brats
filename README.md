@@ -95,8 +95,7 @@ Des examples detaillés
 ![""""""](images/example2_m3.png)
 
 ## Discussion
-
-D'après le tableau ci-dessous qui résume les résultats des trois modèles, on déduit que, globalement, la méthode par fusion précoce des deux modalités (T1ce et FLAIR) est la plus performante. En effet, elle a atteint une valeur maximale de la moyenne d'IoU, ce qui évalue les performances globales du modèle.
+Lors des tests avec les modalités T1, T2 et leurs combinaisons avec T1ce et Flair, les résultats n'étaient pas satisfaisants, d'où le choix des deux modalités T1ce et Flair. D'après le tableau ci-dessous qui résume les résultats des trois modèles, on déduit que, globalement, la méthode par fusion précoce des deux modalités (T1ce et FLAIR) est la plus performante. En effet, elle a atteint une valeur maximale de la moyenne d'IoU, ce qui évalue les performances globales du modèle.
 
 ![""""""](images/discussion.png)
 

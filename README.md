@@ -22,7 +22,7 @@ U-Net est une architecture pour la segmentation sémantique. Il se compose d'un 
 Le jeu de données BRATS 2021 contient des IRM multiparamétriques (mpMRI) de gliomes, avec des diagnostics pathologiques confirmés et des informations sur la méthylation du promoteur MGMT qui sont utilisées pour entraîner, valider et tester les modèles dans le défi BRATS de l’anée 2021. Les scans mpMRI comprennent différentes modalités telles que T1, T1-ce, T2 et T2-FLAIR, et ont été annotés manuellement par des experts pour identifier les sous-régions tumorales, telles que la tumeur améliorée par le Gadolinium, le tissu péri-tumoral envahi et le noyau tumoral nécrotique. Le jeu de données dans cette étude est composé de 1251 images : 1012 pour l'entraînement, 126 pour la validation, et 113 pour le test.
 Pendant l'entraînement, j'utilise un learning rate   de 0.001 sur 15 époques, avec des images de taille 128x128 et un batch size de 2. Les métriques évaluées comprennent MeanIoU (pour quatre classes) car elle permet d'évaluer globalement la méthode, dice_coef, précision, sensibilité, spécificité pour assurer une évaluation complète.
 
-### Architecture de la méthode par fusion précoce des quatres modalités
+### Architecture de la méthode par fusion précoce des quatre modalités
 
 Cette méthode se distingue par la fusion précoce des quatre modalités d'imagerie IRM (T1, T1ce, T2 et Flair). En combinant ces différentes modalités dès les premières couches du réseau, comme illustré ci-dessous, j'exploite de manière optimale les informations des quatres modalités en même temps.
 
